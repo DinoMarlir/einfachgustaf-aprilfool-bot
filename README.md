@@ -1,5 +1,6 @@
 # einfachgustaf-aprilfool-bot
 April fool for the EinfachGustaf Discord
+[join the EinfachGustaf Discord](https://discord.gg/SewMU5tGAs)
 
 ## Setup
 ### Linux
@@ -12,3 +13,6 @@ April fool for the EinfachGustaf Discord
 
 ### Windows
 It's the same but use the start.ps1 file.
+
+## Help
+Open a forum post on the [EinfachGustaf.live Discord Server](https://discord.gg/pHqBNXCzKT) and add the development tag.
