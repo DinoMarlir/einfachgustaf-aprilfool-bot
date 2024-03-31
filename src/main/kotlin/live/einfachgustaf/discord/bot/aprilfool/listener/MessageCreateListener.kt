@@ -2,10 +2,8 @@ package live.einfachgustaf.discord.bot.aprilfool.listener
 
 import dev.kord.core.behavior.channel.MessageChannelBehavior
 import dev.kord.core.entity.User
-import dev.kord.core.entity.channel.Channel
 import dev.kord.core.event.message.MessageCreateEvent
 import dev.kord.core.on
-import live.einfachgustaf.discord.bot.aprilfool.AprilFoolBot
 import live.einfachgustaf.discord.bot.aprilfool.AprilFoolBot.dog
 import live.einfachgustaf.discord.bot.aprilfool.AprilFoolBot.kord
 import live.einfachgustaf.discord.bot.aprilfool.types.DogState
@@ -29,7 +27,7 @@ object MessageCreateListener {
                 println("it's not the 1st april!")
                 return@on
             }
-            
+
             val messageContent = message.content
             val author = message.author
 

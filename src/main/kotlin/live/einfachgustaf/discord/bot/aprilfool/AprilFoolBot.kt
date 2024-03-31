@@ -16,7 +16,6 @@ object AprilFoolBot {
         kord = Kord(token)
 
         MessageCreateListener
-
         kord.login {
             @OptIn(PrivilegedIntent::class)
             intents += Intent.MessageContent
