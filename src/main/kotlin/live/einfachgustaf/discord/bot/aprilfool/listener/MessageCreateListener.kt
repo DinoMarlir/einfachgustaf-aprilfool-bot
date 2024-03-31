@@ -9,6 +9,7 @@ import live.einfachgustaf.discord.bot.aprilfool.AprilFoolBot
 import live.einfachgustaf.discord.bot.aprilfool.AprilFoolBot.dog
 import live.einfachgustaf.discord.bot.aprilfool.AprilFoolBot.kord
 import live.einfachgustaf.discord.bot.aprilfool.types.DogState
+import live.einfachgustaf.discord.bot.aprilfool.utils.isAprilFool
 import live.einfachgustaf.discord.bot.aprilfool.utils.trustedMembers
 import kotlin.random.Random
 
@@ -24,6 +25,11 @@ object MessageCreateListener {
 
     init {
         kord.on<MessageCreateEvent> {
+            if (!isAprilFool()) {
+                println("it's not the 1st april!")
+                return@on
+            }
+            
             val messageContent = message.content
             val author = message.author
 
@@ -41,6 +47,11 @@ object MessageCreateListener {
         }
 
         kord.on<MessageCreateEvent> {
+            if (!isAprilFool()) {
+                println("it's not the 1st april!")
+                return@on
+            }
+
             val author = message.author
             if (author?.isBot != false) return@on
 
