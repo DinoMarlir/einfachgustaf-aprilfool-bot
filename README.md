@@ -1,5 +1,6 @@
 # einfachgustaf-aprilfool-bot
 April fool for the EinfachGustaf Discord
+
 [join the EinfachGustaf Discord](https://discord.gg/SewMU5tGAs)
 
 ## Setup
