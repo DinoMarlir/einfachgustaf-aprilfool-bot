@@ -6,7 +6,6 @@ import dev.kord.gateway.PrivilegedIntent
 import live.einfachgustaf.discord.bot.aprilfool.listener.MessageCreateListener
 import live.einfachgustaf.discord.bot.aprilfool.objects.Dog
 import live.einfachgustaf.discord.bot.aprilfool.utils.token
-import live.einfachgustaf.discord.bot.aprilfool.utils.trustedMembers
 
 object AprilFoolBot {
 

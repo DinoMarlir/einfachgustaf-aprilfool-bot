@@ -18,7 +18,8 @@ object MessageCreateListener {
         "aus" to ::aus,
         "sitz" to ::sitz,
         "steh" to ::steh,
-        "beiß" to ::beiss
+        "beiß" to ::beiss,
+        "iss" to ::iss
     )
 
     init {
@@ -69,5 +70,10 @@ object MessageCreateListener {
     suspend fun beiss(message: String, author: User, channel: MessageChannelBehavior) {
         dog.setState(DogState.BITING)
         channel.createMessage(":tooth::tooth::tooth:")
+    }
+
+    suspend fun iss(message: String, author: User, channel: MessageChannelBehavior) {
+        channel.createMessage("Danke! :heart:")
+        dog.setState(DogState.STANDING)
     }
 }
