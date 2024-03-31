@@ -1,16 +1,18 @@
+val kord_version: String by project
+
 plugins {
     kotlin("jvm") version "1.9.22"
 }
 
 group = "live.einfachgustaf"
-version = "1.0-SNAPSHOT"
+version = "1.0"
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation("org.jetbrains.kotlin:kotlin-test")
+    implementation("dev.kord", "kord-core", kord_version)
 }
 
 tasks.test {
