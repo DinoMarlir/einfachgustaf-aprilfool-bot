@@ -66,21 +66,25 @@ object MessageCreateListener {
         steh(message, author, channel)
     }
 
+    @Suppress("UNUSED_PARAMETER")
     suspend fun sitz(message: String, author: User, channel: MessageChannelBehavior) {
         channel.createMessage("Ok! :service_dog:")
         dog.setState(DogState.SITTING)
     }
 
+    @Suppress("UNUSED_PARAMETER")
     suspend fun steh(message: String, author: User, channel: MessageChannelBehavior) {
         channel.createMessage("Ok! :guide_dog:")
         dog.setState(DogState.STANDING)
     }
 
+    @Suppress("UNUSED_PARAMETER")
     suspend fun beiss(message: String, author: User, channel: MessageChannelBehavior) {
         dog.setState(DogState.BITING)
         channel.createMessage(":tooth::tooth::tooth:")
     }
 
+    @Suppress("UNUSED_PARAMETER")
     suspend fun iss(message: String, author: User, channel: MessageChannelBehavior) {
         channel.createMessage("Danke! :heart:")
         dog.setState(DogState.STANDING)
